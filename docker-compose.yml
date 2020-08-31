@@ -36,7 +36,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./docker/nginx/my.cnf:/etc/mysql/mysql.conf.d/bind.cnf
+      - ./docker/mysql/my.cnf:/etc/mysql/mysql.conf.d/bind.cnf
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: homestead
